@@ -6,7 +6,7 @@ class Header extends React.Component {
             <div>
                 <h2>Hot and Cold</h2>
                 <h3>{this.props.feedback}</h3>
-                {this.props.gameStatus && <button onClick={this.props.startNewGame}>New Game?</button>}
+                {this.props.gameStatus && <button onClick={()=>this.props.startNewGame()}>New Game?</button>}
             </div>
         );
     }

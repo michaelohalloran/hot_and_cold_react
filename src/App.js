@@ -21,7 +21,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.handleGuess = this.handleGuess.bind(this);
-    this.startNewGame = this.startNewGame(this);
+    this.startNewGame = this.startNewGame.bind(this);
     this.state = {
       //store currentAns
       currentAnswer: Math.floor(Math.random()*100 + 1),
